@@ -3,14 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IncrementadorComponent } from './incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [IncrementadorComponent],
   exports: [IncrementadorComponent],
-  imports: [
-    CommonModule,
-    FormsModule
-  ]
+  imports: [CommonModule, FormsModule],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

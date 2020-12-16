@@ -5,17 +5,17 @@ import { PagesRoutingModule } from './pages/pages.routing';
 import { AuthRoutingModule } from './auth/auth.routing';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  {path: '**', component: NopagefoundComponent},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '**', component: NopagefoundComponent },
 ];
 
 @NgModule({
   declarations: [],
-  imports: [RouterModule.forRoot(routes),
-   PagesRoutingModule,
-   AuthRoutingModule,
+  imports: [
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
+    PagesRoutingModule,
+    AuthRoutingModule,
   ],
-
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

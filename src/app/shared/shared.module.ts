@@ -5,20 +5,9 @@ import { HeadbarComponent } from './headbar/headbar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
-  declarations: [
-    SidebarComponent,
-    HeadbarComponent,
-    BreadcrumbsComponent,
-  ],
-  exports: [
-    SidebarComponent,
-    HeadbarComponent,
-    BreadcrumbsComponent,
-  ],
-  imports: [
-    CommonModule, RouterModule],
+  declarations: [SidebarComponent, HeadbarComponent, BreadcrumbsComponent],
+  exports: [SidebarComponent, HeadbarComponent, BreadcrumbsComponent],
+  imports: [CommonModule, RouterModule],
 })
-export class SharedModule { }
+export class SharedModule {}
